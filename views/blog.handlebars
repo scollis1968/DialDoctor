@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example App - Home</title>
+</head>
+<body>
+
+<!-- Uses built-in `if` helper. -->
+{{#if showTitle}}
+    <h1>blog (blog.handlebars)</h1>
+    <h2>User:{{ userName }}</h2>
+{{/if}}
+
+<h1>Blog!</h1>
+
+{{#each entries}}
+    <p>
+        <a href="/article/{{id}}">{{title}}</a><br/>
+        Published: {{published}}
+    </p>
+{{/each}}
+
+</body>
+<p>{{> footer }}</p>
+</html>

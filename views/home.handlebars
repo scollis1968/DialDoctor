@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DialDoctor - Home</title>
+</head>
+<body>
+
+<!-- Uses built-in `if` helper. -->
+{{#if showTitle}}
+    <h1>DialDoctor Home</h1>
+    <h1>UserName={{ userName }}</h1>
+{{/if}}
+
+<!-- Calls `foo` helper, overridden at render-level. -->
+<p>{{foo}}</p>
+
+<!-- Calls `bar` helper, defined at instance-level. -->
+<p>{{bar}}</p>
+
+</body>
+<p>{{> footer }}</p>
+</html>
